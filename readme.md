@@ -1,16 +1,17 @@
 Lighthouse Passport Login for Lighthouse Graphql 4
 ===============================================
 ## Versions
-- Laravel ^8.24
+- Laravel ^8.12
 - Lighthouse ^4.17
 - Passport ^9.0
 - Socialite ^5.1
+- JetStream ^2.3
 
 ## Links
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 ## Install
--   After to install Laravel 8.
+-   After to install Laravel 8. [documentation](https://laravel.com/docs)
 
 for install this package, write this command.
 
