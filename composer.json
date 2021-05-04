@@ -1,0 +1,58 @@
+{
+    "name": "code7day/lighthouse-passport",
+    "description": "Lighthouse Passport Login implements the joint integration of Lighthouse, Passport, Socialite in Laravel 8 with Jetstream and Livewire",
+    "keywords": [
+        "laravel",
+        "jetstream",
+        "livewire",
+        "GraphQL",
+        "lighthouse",
+        "passport"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edu Flores",
+            "email": "edu@floresrobles.com",
+            "homepage": "http://floresrobles.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "nuwave/lighthouse": "^4.17 || ^5.0",
+        "laravel/passport": "^9.0 || ^10.0",
+        "laravel/socialite": "^4.0 || ^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5 || ^9.0",
+        "orchestra/testbench": "^4 || ^5 || ^6",
+        "eduarguz/shift-php-cs": "dev-master",
+        "laravel/legacy-factories": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Code7day\\LighthousePassportLogin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Code7day\\LighthousePassportLogin\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Code7day\\LighthousePassportLogin\\Providers\\LighthousePassportLoginServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "cs": [
+            "PHP_CS_FIXER_IGNORE_ENV=true vendor/bin/php-cs-fixer fix --config=.php_cs.dist -vvv --using-cache=no"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+type User @model(class: "Code7day\\LighthousePassportLogin\\Tests\\User"){
+    id: ID!
+    name: String!
+    email: String!
+}
+
+type Query {
+    me: User @auth(guard: "api")
+    loggedInUserViaGuardForTest: User @field(resolver: "Code7day\\LighthousePassportLogin\\Tests\\LoggedInUser@resolve") @guard(with: ["api"])
+}
+
+type Mutation {
+    createUser: User @create(model: "Code7day\\LighthousePassportLogin\\Tests\\User")
+}
